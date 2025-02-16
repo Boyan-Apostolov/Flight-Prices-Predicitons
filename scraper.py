@@ -9,10 +9,31 @@ GitHub: github.com/Boyan-Apostolov/Flight-Prices-Predicitons
 
 from playwright.sync_api import sync_playwright
 from datetime import datetime
+import requests
+import json
 import csv
 
+holidays_endpoint = "https://openholidaysapi.org/PublicHolidays?countryIsoCode=BG&countryIsoCode=NL&languageIsoCode=EN&validFrom=2025-01-01&validTo=2025-12-31"
 today = datetime.today()
 data = []
+holidays_data = []
+
+
+def preload_holidays():
+    global holidays_data
+
+    print("\n🚀 Fetching holidays...\n")
+
+    response = requests.get(holidays_endpoint)
+
+    if response.status_code == 200:
+        holidays = response.json()
+
+        holidays_data = {holiday["startDate"] for holiday in holidays}
+        print(holidays_data)
+    else:
+        print(
+            f"❌ Failed to fetch data from API. Status code: {response.status_code}")
 
 
 def export_to_csv(data, filename="flight_prices.csv"):
@@ -31,13 +52,12 @@ def export_to_csv(data, filename="flight_prices.csv"):
 
 def open_webpage(url):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         page = open_flights(browser, url)
 
         print("\n🚀 Flights scraper started...\n")
 
-        for i in range(3):  # Adjust as needed
-            print(f"🔄 Scraping iteration {i+1}/319...")
+        for i in range(5):  # To adjust the future days count
             scrape_page(page)
             next_date(page)
             page.wait_for_timeout(200)
@@ -50,8 +70,8 @@ def open_webpage(url):
 
 
 def scrape_page(page):
-
     try:
+        # Get the departure and arrival airports
         departure_airport = page.locator(
             ".V00Bye.ESCxub.KckZb input").nth(0).input_value()
         arrival_airport = page.locator(
@@ -62,7 +82,7 @@ def scrape_page(page):
             ".TP4Lpb.eoY5cb.j0Ppje").nth(0).input_value()
         departure_date = datetime.strptime(
             departure_date_input + ", 2025", "%a, %b %d, %Y")
-        departure_date_formatted = departure_date.strftime("%d-%m-%Y")
+        departure_date_formatted = departure_date.strftime("%Y-%m-%d")
 
         print(f"📅 Scraping for - Departure date: {departure_date_formatted}")
 
@@ -72,7 +92,7 @@ def scrape_page(page):
 
         # Get all history points
         history_point_marker = ".ke9kZe-LkdAo-RbRzK-JNdkSc"
-        page.wait_for_selector(history_point_marker)
+        page.wait_for_selector(history_point_marker, timeout=1000)
         elements = page.locator(history_point_marker).all()
 
         for element in elements:
@@ -84,7 +104,7 @@ def scrape_page(page):
                 parts[0]) if parts[0].isdigit() else 0
             price = parts[-1] if len(parts) > 1 else "N/A"
 
-            # Calculate absolute days ago
+            # Calculate absolute days before departure
             days_ago = abs((departure_date - today).days) + history_days_ago
 
             entry = {
@@ -92,7 +112,8 @@ def scrape_page(page):
                 "departureDate": departure_date_formatted,
                 "price": price,
                 "departure_airport": departure_airport,
-                "arrival_airport": arrival_airport
+                "arrival_airport": arrival_airport,
+                "is_holiday": departure_date_formatted in holidays_data
             }
             data.append(entry)
 
@@ -134,4 +155,6 @@ def next_date(page):
 
 
 if __name__ == "__main__":
+    preload_holidays()
+
     open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTE3KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC")
