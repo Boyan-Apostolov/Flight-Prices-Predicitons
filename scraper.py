@@ -36,7 +36,7 @@ def open_webpage(url):
 
         print("\n🚀 Flights scraper started...\n")
 
-        for i in range(319):  # Adjust as needed
+        for i in range(3):  # Adjust as needed
             print(f"🔄 Scraping iteration {i+1}/319...")
             scrape_page(page)
             next_date(page)
@@ -50,12 +50,18 @@ def open_webpage(url):
 
 
 def scrape_page(page):
+
     try:
+        departure_airport = page.locator(
+            ".V00Bye.ESCxub.KckZb input").nth(0).input_value()
+        arrival_airport = page.locator(
+            ".V00Bye.ESCxub.KckZb input").nth(1).input_value()
+
         # Get the departure date input value
         departure_date_input = page.locator(
             ".TP4Lpb.eoY5cb.j0Ppje").nth(0).input_value()
         departure_date = datetime.strptime(
-            departure_date_input, "%a, %b %d").replace(year=2025)
+            departure_date_input + ", 2025", "%a, %b %d, %Y")
         departure_date_formatted = departure_date.strftime("%d-%m-%Y")
 
         print(f"📅 Scraping for - Departure date: {departure_date_formatted}")
@@ -84,7 +90,9 @@ def scrape_page(page):
             entry = {
                 "daysAgo": days_ago,
                 "departureDate": departure_date_formatted,
-                "price": price
+                "price": price,
+                "departure_airport": departure_airport,
+                "arrival_airport": arrival_airport
             }
             data.append(entry)
 
@@ -126,4 +134,4 @@ def next_date(page):
 
 
 if __name__ == "__main__":
-    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTE1KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC")
+    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTE3KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC")
