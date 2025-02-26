@@ -1,200 +1,245 @@
-daysAgo,departureDate,price,departure_airport,arrival_airport,is_holiday
-60,2025-02-17,€30,Eindhoven,Sofia,False
-59,2025-02-17,€30,Eindhoven,Sofia,False
-58,2025-02-17,€30,Eindhoven,Sofia,False
-57,2025-02-17,€30,Eindhoven,Sofia,False
-56,2025-02-17,€30,Eindhoven,Sofia,False
-55,2025-02-17,€30,Eindhoven,Sofia,False
-54,2025-02-17,€30,Eindhoven,Sofia,False
-53,2025-02-17,€30,Eindhoven,Sofia,False
-52,2025-02-17,€30,Eindhoven,Sofia,False
-51,2025-02-17,€30,Eindhoven,Sofia,False
-50,2025-02-17,€30,Eindhoven,Sofia,False
-49,2025-02-17,€30,Eindhoven,Sofia,False
-48,2025-02-17,€25,Eindhoven,Sofia,False
-47,2025-02-17,€24,Eindhoven,Sofia,False
-46,2025-02-17,€24,Eindhoven,Sofia,False
-45,2025-02-17,€24,Eindhoven,Sofia,False
-62,2025-02-19,€30,Eindhoven,Sofia,False
-61,2025-02-19,€30,Eindhoven,Sofia,False
-60,2025-02-19,€30,Eindhoven,Sofia,False
-59,2025-02-19,€30,Eindhoven,Sofia,False
-58,2025-02-19,€32,Eindhoven,Sofia,False
-57,2025-02-19,€30,Eindhoven,Sofia,False
-56,2025-02-19,€30,Eindhoven,Sofia,False
-55,2025-02-19,€30,Eindhoven,Sofia,False
-54,2025-02-19,€30,Eindhoven,Sofia,False
-53,2025-02-19,€30,Eindhoven,Sofia,False
-52,2025-02-19,€30,Eindhoven,Sofia,False
-51,2025-02-19,€30,Eindhoven,Sofia,False
-50,2025-02-19,€25,Eindhoven,Sofia,False
-49,2025-02-19,€25,Eindhoven,Sofia,False
-48,2025-02-19,€25,Eindhoven,Sofia,False
-47,2025-02-19,€25,Eindhoven,Sofia,False
-46,2025-02-19,€24,Eindhoven,Sofia,False
-45,2025-02-19,€24,Eindhoven,Sofia,False
-44,2025-02-19,€24,Eindhoven,Sofia,False
-43,2025-02-19,€29,Eindhoven,Sofia,False
-42,2025-02-19,€25,Eindhoven,Sofia,False
-41,2025-02-19,€26,Eindhoven,Sofia,False
-40,2025-02-19,€26,Eindhoven,Sofia,False
-39,2025-02-19,€24,Eindhoven,Sofia,False
-38,2025-02-19,€27,Eindhoven,Sofia,False
-37,2025-02-19,€40,Eindhoven,Sofia,False
-36,2025-02-19,€28,Eindhoven,Sofia,False
-35,2025-02-19,€38,Eindhoven,Sofia,False
-34,2025-02-19,€44,Eindhoven,Sofia,False
-33,2025-02-19,€47,Eindhoven,Sofia,False
-32,2025-02-19,€49,Eindhoven,Sofia,False
-31,2025-02-19,€49,Eindhoven,Sofia,False
-30,2025-02-19,€49,Eindhoven,Sofia,False
-29,2025-02-19,€39,Eindhoven,Sofia,False
-28,2025-02-19,€37,Eindhoven,Sofia,False
-27,2025-02-19,€39,Eindhoven,Sofia,False
-26,2025-02-19,€40,Eindhoven,Sofia,False
-25,2025-02-19,€33,Eindhoven,Sofia,False
-24,2025-02-19,€29,Eindhoven,Sofia,False
-23,2025-02-19,€28,Eindhoven,Sofia,False
-22,2025-02-19,€29,Eindhoven,Sofia,False
-21,2025-02-19,€30,Eindhoven,Sofia,False
-20,2025-02-19,€33,Eindhoven,Sofia,False
-19,2025-02-19,€29,Eindhoven,Sofia,False
-18,2025-02-19,€32,Eindhoven,Sofia,False
-17,2025-02-19,€36,Eindhoven,Sofia,False
-16,2025-02-19,€39,Eindhoven,Sofia,False
-15,2025-02-19,€37,Eindhoven,Sofia,False
-14,2025-02-19,€39,Eindhoven,Sofia,False
-13,2025-02-19,€45,Eindhoven,Sofia,False
-12,2025-02-19,€46,Eindhoven,Sofia,False
-11,2025-02-19,€49,Eindhoven,Sofia,False
-10,2025-02-19,€49,Eindhoven,Sofia,False
-9,2025-02-19,€59,Eindhoven,Sofia,False
-8,2025-02-19,€53,Eindhoven,Sofia,False
-7,2025-02-19,€56,Eindhoven,Sofia,False
-6,2025-02-19,€49,Eindhoven,Sofia,False
-5,2025-02-19,€65,Eindhoven,Sofia,False
-4,2025-02-19,€69,Eindhoven,Sofia,False
-3,2025-02-19,€114,Eindhoven,Sofia,False
-2,2025-02-19,€124,Eindhoven,Sofia,False
-63,2025-02-20,€42,Eindhoven,Sofia,False
-62,2025-02-20,€35,Eindhoven,Sofia,False
-61,2025-02-20,€35,Eindhoven,Sofia,False
-60,2025-02-20,€35,Eindhoven,Sofia,False
-59,2025-02-20,€44,Eindhoven,Sofia,False
-58,2025-02-20,€45,Eindhoven,Sofia,False
-57,2025-02-20,€47,Eindhoven,Sofia,False
-56,2025-02-20,€52,Eindhoven,Sofia,False
-55,2025-02-20,€55,Eindhoven,Sofia,False
-54,2025-02-20,€51,Eindhoven,Sofia,False
-53,2025-02-20,€59,Eindhoven,Sofia,False
-52,2025-02-20,€60,Eindhoven,Sofia,False
-51,2025-02-20,€67,Eindhoven,Sofia,False
-50,2025-02-20,€63,Eindhoven,Sofia,False
-49,2025-02-20,€57,Eindhoven,Sofia,False
-48,2025-02-20,€59,Eindhoven,Sofia,False
-47,2025-02-20,€48,Eindhoven,Sofia,False
-46,2025-02-20,€44,Eindhoven,Sofia,False
-45,2025-02-20,€41,Eindhoven,Sofia,False
-44,2025-02-20,€44,Eindhoven,Sofia,False
-43,2025-02-20,€41,Eindhoven,Sofia,False
-42,2025-02-20,€41,Eindhoven,Sofia,False
-41,2025-02-20,€36,Eindhoven,Sofia,False
-40,2025-02-20,€48,Eindhoven,Sofia,False
-39,2025-02-20,€53,Eindhoven,Sofia,False
-38,2025-02-20,€50,Eindhoven,Sofia,False
-37,2025-02-20,€39,Eindhoven,Sofia,False
-36,2025-02-20,€40,Eindhoven,Sofia,False
-35,2025-02-20,€36,Eindhoven,Sofia,False
-34,2025-02-20,€47,Eindhoven,Sofia,False
-33,2025-02-20,€62,Eindhoven,Sofia,False
-32,2025-02-20,€68,Eindhoven,Sofia,False
-31,2025-02-20,€76,Eindhoven,Sofia,False
-30,2025-02-20,€62,Eindhoven,Sofia,False
-29,2025-02-20,€54,Eindhoven,Sofia,False
-28,2025-02-20,€48,Eindhoven,Sofia,False
-27,2025-02-20,€42,Eindhoven,Sofia,False
-26,2025-02-20,€50,Eindhoven,Sofia,False
-25,2025-02-20,€53,Eindhoven,Sofia,False
-24,2025-02-20,€46,Eindhoven,Sofia,False
-23,2025-02-20,€58,Eindhoven,Sofia,False
-22,2025-02-20,€58,Eindhoven,Sofia,False
-21,2025-02-20,€60,Eindhoven,Sofia,False
-20,2025-02-20,€53,Eindhoven,Sofia,False
-19,2025-02-20,€47,Eindhoven,Sofia,False
-18,2025-02-20,€51,Eindhoven,Sofia,False
-17,2025-02-20,€50,Eindhoven,Sofia,False
-16,2025-02-20,€56,Eindhoven,Sofia,False
-15,2025-02-20,€57,Eindhoven,Sofia,False
-14,2025-02-20,€50,Eindhoven,Sofia,False
-13,2025-02-20,€74,Eindhoven,Sofia,False
-12,2025-02-20,€77,Eindhoven,Sofia,False
-11,2025-02-20,€88,Eindhoven,Sofia,False
-10,2025-02-20,€83,Eindhoven,Sofia,False
-9,2025-02-20,€89,Eindhoven,Sofia,False
-8,2025-02-20,€95,Eindhoven,Sofia,False
-7,2025-02-20,€151,Eindhoven,Sofia,False
-6,2025-02-20,€141,Eindhoven,Sofia,False
-5,2025-02-20,€111,Eindhoven,Sofia,False
-4,2025-02-20,€99,Eindhoven,Sofia,False
-3,2025-02-20,€101,Eindhoven,Sofia,False
-64,2025-02-21,€66,Eindhoven,Sofia,False
-63,2025-02-21,€80,Eindhoven,Sofia,False
-62,2025-02-21,€70,Eindhoven,Sofia,False
-61,2025-02-21,€70,Eindhoven,Sofia,False
-60,2025-02-21,€70,Eindhoven,Sofia,False
-59,2025-02-21,€70,Eindhoven,Sofia,False
-58,2025-02-21,€70,Eindhoven,Sofia,False
-57,2025-02-21,€80,Eindhoven,Sofia,False
-56,2025-02-21,€100,Eindhoven,Sofia,False
-55,2025-02-21,€100,Eindhoven,Sofia,False
-54,2025-02-21,€100,Eindhoven,Sofia,False
-53,2025-02-21,€100,Eindhoven,Sofia,False
-52,2025-02-21,€78,Eindhoven,Sofia,False
-51,2025-02-21,€100,Eindhoven,Sofia,False
-50,2025-02-21,€100,Eindhoven,Sofia,False
-49,2025-02-21,€70,Eindhoven,Sofia,False
-48,2025-02-21,€53,Eindhoven,Sofia,False
-47,2025-02-21,€53,Eindhoven,Sofia,False
-46,2025-02-21,€60,Eindhoven,Sofia,False
-45,2025-02-21,€60,Eindhoven,Sofia,False
-44,2025-02-21,€50,Eindhoven,Sofia,False
-43,2025-02-21,€49,Eindhoven,Sofia,False
-42,2025-02-21,€65,Eindhoven,Sofia,False
-41,2025-02-21,€65,Eindhoven,Sofia,False
-40,2025-02-21,€65,Eindhoven,Sofia,False
-39,2025-02-21,€65,Eindhoven,Sofia,False
-38,2025-02-21,€65,Eindhoven,Sofia,False
-37,2025-02-21,€65,Eindhoven,Sofia,False
-36,2025-02-21,€65,Eindhoven,Sofia,False
-35,2025-02-21,€69,Eindhoven,Sofia,False
-34,2025-02-21,€89,Eindhoven,Sofia,False
-33,2025-02-21,€79,Eindhoven,Sofia,False
-32,2025-02-21,€79,Eindhoven,Sofia,False
-31,2025-02-21,€79,Eindhoven,Sofia,False
-30,2025-02-21,€79,Eindhoven,Sofia,False
-29,2025-02-21,€89,Eindhoven,Sofia,False
-28,2025-02-21,€89,Eindhoven,Sofia,False
-27,2025-02-21,€89,Eindhoven,Sofia,False
-26,2025-02-21,€81,Eindhoven,Sofia,False
-25,2025-02-21,€99,Eindhoven,Sofia,False
-24,2025-02-21,€99,Eindhoven,Sofia,False
-23,2025-02-21,€114,Eindhoven,Sofia,False
-22,2025-02-21,€114,Eindhoven,Sofia,False
-21,2025-02-21,€114,Eindhoven,Sofia,False
-20,2025-02-21,€89,Eindhoven,Sofia,False
-19,2025-02-21,€99,Eindhoven,Sofia,False
-18,2025-02-21,€99,Eindhoven,Sofia,False
-17,2025-02-21,€99,Eindhoven,Sofia,False
-16,2025-02-21,€99,Eindhoven,Sofia,False
-15,2025-02-21,€99,Eindhoven,Sofia,False
-14,2025-02-21,€99,Eindhoven,Sofia,False
-13,2025-02-21,€114,Eindhoven,Sofia,False
-12,2025-02-21,€124,Eindhoven,Sofia,False
-11,2025-02-21,€114,Eindhoven,Sofia,False
-10,2025-02-21,€99,Eindhoven,Sofia,False
-9,2025-02-21,€99,Eindhoven,Sofia,False
-8,2025-02-21,€89,Eindhoven,Sofia,False
-7,2025-02-21,€99,Eindhoven,Sofia,False
-6,2025-02-21,€89,Eindhoven,Sofia,False
-5,2025-02-21,€89,Eindhoven,Sofia,False
-4,2025-02-21,€99,Eindhoven,Sofia,False
+daysAgo,departureDate,price,departure_airport,arrival_airport,is_public_holiday,is_school_holiday
+61,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+60,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+59,2025-02-28,BGN 153,Eindhoven,Sofia,False,True
+58,2025-02-28,BGN 153,Eindhoven,Sofia,False,True
+57,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+56,2025-02-28,BGN 138,Eindhoven,Sofia,False,True
+55,2025-02-28,BGN 120,Eindhoven,Sofia,False,True
+54,2025-02-28,BGN 120,Eindhoven,Sofia,False,True
+53,2025-02-28,BGN 158,Eindhoven,Sofia,False,True
+52,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+51,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+50,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+49,2025-02-28,BGN 197,Eindhoven,Sofia,False,True
+48,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+47,2025-02-28,BGN 197,Eindhoven,Sofia,False,True
+46,2025-02-28,BGN 197,Eindhoven,Sofia,False,True
+45,2025-02-28,BGN 197,Eindhoven,Sofia,False,True
+44,2025-02-28,BGN 197,Eindhoven,Sofia,False,True
+43,2025-02-28,BGN 177,Eindhoven,Sofia,False,True
+42,2025-02-28,BGN 197,Eindhoven,Sofia,False,True
+41,2025-02-28,BGN 246,Eindhoven,Sofia,False,True
+40,2025-02-28,BGN 246,Eindhoven,Sofia,False,True
+39,2025-02-28,BGN 246,Eindhoven,Sofia,False,True
+38,2025-02-28,BGN 263,Eindhoven,Sofia,False,True
+37,2025-02-28,BGN 263,Eindhoven,Sofia,False,True
+36,2025-02-28,BGN 266,Eindhoven,Sofia,False,True
+35,2025-02-28,BGN 312,Eindhoven,Sofia,False,True
+34,2025-02-28,BGN 313,Eindhoven,Sofia,False,True
+33,2025-02-28,BGN 313,Eindhoven,Sofia,False,True
+32,2025-02-28,BGN 313,Eindhoven,Sofia,False,True
+31,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+30,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+29,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+28,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+27,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+26,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+25,2025-02-28,BGN 195,Eindhoven,Sofia,False,True
+24,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+23,2025-02-28,BGN 176,Eindhoven,Sofia,False,True
+22,2025-02-28,BGN 174,Eindhoven,Sofia,False,True
+21,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+20,2025-02-28,BGN 175,Eindhoven,Sofia,False,True
+19,2025-02-28,BGN 194,Eindhoven,Sofia,False,True
+18,2025-02-28,BGN 194,Eindhoven,Sofia,False,True
+17,2025-02-28,BGN 195,Eindhoven,Sofia,False,True
+16,2025-02-28,BGN 194,Eindhoven,Sofia,False,True
+15,2025-02-28,BGN 204,Eindhoven,Sofia,False,True
+14,2025-02-28,BGN 223,Eindhoven,Sofia,False,True
+13,2025-02-28,BGN 243,Eindhoven,Sofia,False,True
+12,2025-02-28,BGN 263,Eindhoven,Sofia,False,True
+11,2025-02-28,BGN 264,Eindhoven,Sofia,False,True
+10,2025-02-28,BGN 264,Eindhoven,Sofia,False,True
+9,2025-02-28,BGN 263,Eindhoven,Sofia,False,True
+8,2025-02-28,BGN 243,Eindhoven,Sofia,False,True
+7,2025-02-28,BGN 263,Eindhoven,Sofia,False,True
+6,2025-02-28,BGN 174,Eindhoven,Sofia,False,True
+5,2025-02-28,BGN 136,Eindhoven,Sofia,False,True
+4,2025-02-28,BGN 194,Eindhoven,Sofia,False,True
+3,2025-02-28,BGN 136,Eindhoven,Sofia,False,True
+2,2025-02-28,BGN 243,Eindhoven,Sofia,False,True
+1,2025-02-28,BGN 624,Eindhoven,Sofia,False,True
+62,2025-03-01,BGN 182,Eindhoven,Sofia,False,True
+61,2025-03-01,BGN 181,Eindhoven,Sofia,False,True
+60,2025-03-01,BGN 173,Eindhoven,Sofia,False,True
+59,2025-03-01,BGN 152,Eindhoven,Sofia,False,True
+58,2025-03-01,BGN 151,Eindhoven,Sofia,False,True
+57,2025-03-01,BGN 133,Eindhoven,Sofia,False,True
+56,2025-03-01,BGN 117,Eindhoven,Sofia,False,True
+55,2025-03-01,BGN 117,Eindhoven,Sofia,False,True
+54,2025-03-01,BGN 137,Eindhoven,Sofia,False,True
+53,2025-03-01,BGN 110,Eindhoven,Sofia,False,True
+52,2025-03-01,BGN 99,Eindhoven,Sofia,False,True
+51,2025-03-01,BGN 99,Eindhoven,Sofia,False,True
+50,2025-03-01,BGN 101,Eindhoven,Sofia,False,True
+49,2025-03-01,BGN 98,Eindhoven,Sofia,False,True
+48,2025-03-01,BGN 103,Eindhoven,Sofia,False,True
+47,2025-03-01,BGN 97,Eindhoven,Sofia,False,True
+46,2025-03-01,BGN 99,Eindhoven,Sofia,False,True
+45,2025-03-01,BGN 111,Eindhoven,Sofia,False,True
+44,2025-03-01,BGN 98,Eindhoven,Sofia,False,True
+43,2025-03-01,BGN 83,Eindhoven,Sofia,False,True
+42,2025-03-01,BGN 99,Eindhoven,Sofia,False,True
+41,2025-03-01,BGN 101,Eindhoven,Sofia,False,True
+40,2025-03-01,BGN 92,Eindhoven,Sofia,False,True
+39,2025-03-01,BGN 109,Eindhoven,Sofia,False,True
+38,2025-03-01,BGN 96,Eindhoven,Sofia,False,True
+37,2025-03-01,BGN 96,Eindhoven,Sofia,False,True
+36,2025-03-01,BGN 105,Eindhoven,Sofia,False,True
+35,2025-03-01,BGN 96,Eindhoven,Sofia,False,True
+34,2025-03-01,BGN 96,Eindhoven,Sofia,False,True
+33,2025-03-01,BGN 103,Eindhoven,Sofia,False,True
+32,2025-03-01,BGN 105,Eindhoven,Sofia,False,True
+31,2025-03-01,BGN 96,Eindhoven,Sofia,False,True
+30,2025-03-01,BGN 91,Eindhoven,Sofia,False,True
+29,2025-03-01,BGN 111,Eindhoven,Sofia,False,True
+28,2025-03-01,BGN 139,Eindhoven,Sofia,False,True
+27,2025-03-01,BGN 164,Eindhoven,Sofia,False,True
+26,2025-03-01,BGN 144,Eindhoven,Sofia,False,True
+25,2025-03-01,BGN 166,Eindhoven,Sofia,False,True
+24,2025-03-01,BGN 189,Eindhoven,Sofia,False,True
+23,2025-03-01,BGN 208,Eindhoven,Sofia,False,True
+22,2025-03-01,BGN 204,Eindhoven,Sofia,False,True
+21,2025-03-01,BGN 150,Eindhoven,Sofia,False,True
+20,2025-03-01,BGN 150,Eindhoven,Sofia,False,True
+19,2025-03-01,BGN 173,Eindhoven,Sofia,False,True
+18,2025-03-01,BGN 203,Eindhoven,Sofia,False,True
+17,2025-03-01,BGN 205,Eindhoven,Sofia,False,True
+16,2025-03-01,BGN 236,Eindhoven,Sofia,False,True
+15,2025-03-01,BGN 254,Eindhoven,Sofia,False,True
+14,2025-03-01,BGN 255,Eindhoven,Sofia,False,True
+13,2025-03-01,BGN 272,Eindhoven,Sofia,False,True
+12,2025-03-01,BGN 268,Eindhoven,Sofia,False,True
+11,2025-03-01,BGN 184,Eindhoven,Sofia,False,True
+10,2025-03-01,BGN 180,Eindhoven,Sofia,False,True
+9,2025-03-01,BGN 236,Eindhoven,Sofia,False,True
+8,2025-03-01,BGN 205,Eindhoven,Sofia,False,True
+7,2025-03-01,BGN 236,Eindhoven,Sofia,False,True
+6,2025-03-01,BGN 297,Eindhoven,Sofia,False,True
+5,2025-03-01,BGN 316,Eindhoven,Sofia,False,True
+4,2025-03-01,BGN 304,Eindhoven,Sofia,False,True
+3,2025-03-01,BGN 374,Eindhoven,Sofia,False,True
+2,2025-03-01,BGN 496,Eindhoven,Sofia,False,True
+63,2025-03-02,BGN 111,Eindhoven,Sofia,False,True
+62,2025-03-02,BGN 110,Eindhoven,Sofia,False,True
+61,2025-03-02,BGN 112,Eindhoven,Sofia,False,True
+60,2025-03-02,BGN 108,Eindhoven,Sofia,False,True
+59,2025-03-02,BGN 105,Eindhoven,Sofia,False,True
+58,2025-03-02,BGN 93,Eindhoven,Sofia,False,True
+57,2025-03-02,BGN 95,Eindhoven,Sofia,False,True
+56,2025-03-02,BGN 97,Eindhoven,Sofia,False,True
+55,2025-03-02,BGN 103,Eindhoven,Sofia,False,True
+54,2025-03-02,BGN 99,Eindhoven,Sofia,False,True
+53,2025-03-02,BGN 99,Eindhoven,Sofia,False,True
+52,2025-03-02,BGN 101,Eindhoven,Sofia,False,True
+51,2025-03-02,BGN 93,Eindhoven,Sofia,False,True
+50,2025-03-02,BGN 84,Eindhoven,Sofia,False,True
+49,2025-03-02,BGN 81,Eindhoven,Sofia,False,True
+48,2025-03-02,BGN 67,Eindhoven,Sofia,False,True
+47,2025-03-02,BGN 65,Eindhoven,Sofia,False,True
+46,2025-03-02,BGN 71,Eindhoven,Sofia,False,True
+45,2025-03-02,BGN 77,Eindhoven,Sofia,False,True
+44,2025-03-02,BGN 77,Eindhoven,Sofia,False,True
+43,2025-03-02,BGN 71,Eindhoven,Sofia,False,True
+42,2025-03-02,BGN 71,Eindhoven,Sofia,False,True
+41,2025-03-02,BGN 83,Eindhoven,Sofia,False,True
+40,2025-03-02,BGN 90,Eindhoven,Sofia,False,True
+39,2025-03-02,BGN 98,Eindhoven,Sofia,False,True
+38,2025-03-02,BGN 99,Eindhoven,Sofia,False,True
+37,2025-03-02,BGN 89,Eindhoven,Sofia,False,True
+36,2025-03-02,BGN 81,Eindhoven,Sofia,False,True
+35,2025-03-02,BGN 73,Eindhoven,Sofia,False,True
+34,2025-03-02,BGN 75,Eindhoven,Sofia,False,True
+33,2025-03-02,BGN 101,Eindhoven,Sofia,False,True
+32,2025-03-02,BGN 102,Eindhoven,Sofia,False,True
+31,2025-03-02,BGN 99,Eindhoven,Sofia,False,True
+30,2025-03-02,BGN 89,Eindhoven,Sofia,False,True
+29,2025-03-02,BGN 91,Eindhoven,Sofia,False,True
+28,2025-03-02,BGN 85,Eindhoven,Sofia,False,True
+27,2025-03-02,BGN 85,Eindhoven,Sofia,False,True
+26,2025-03-02,BGN 89,Eindhoven,Sofia,False,True
+25,2025-03-02,BGN 97,Eindhoven,Sofia,False,True
+24,2025-03-02,BGN 108,Eindhoven,Sofia,False,True
+23,2025-03-02,BGN 124,Eindhoven,Sofia,False,True
+22,2025-03-02,BGN 130,Eindhoven,Sofia,False,True
+21,2025-03-02,BGN 130,Eindhoven,Sofia,False,True
+20,2025-03-02,BGN 130,Eindhoven,Sofia,False,True
+19,2025-03-02,BGN 124,Eindhoven,Sofia,False,True
+18,2025-03-02,BGN 124,Eindhoven,Sofia,False,True
+17,2025-03-02,BGN 135,Eindhoven,Sofia,False,True
+16,2025-03-02,BGN 135,Eindhoven,Sofia,False,True
+15,2025-03-02,BGN 136,Eindhoven,Sofia,False,True
+14,2025-03-02,BGN 135,Eindhoven,Sofia,False,True
+13,2025-03-02,BGN 175,Eindhoven,Sofia,False,True
+12,2025-03-02,BGN 138,Eindhoven,Sofia,False,True
+11,2025-03-02,BGN 114,Eindhoven,Sofia,False,True
+10,2025-03-02,BGN 163,Eindhoven,Sofia,False,True
+9,2025-03-02,BGN 214,Eindhoven,Sofia,False,True
+8,2025-03-02,BGN 188,Eindhoven,Sofia,False,True
+7,2025-03-02,BGN 179,Eindhoven,Sofia,False,True
+6,2025-03-02,BGN 175,Eindhoven,Sofia,False,True
+5,2025-03-02,BGN 175,Eindhoven,Sofia,False,True
+4,2025-03-02,BGN 223,Eindhoven,Sofia,False,True
+3,2025-03-02,BGN 311,Eindhoven,Sofia,False,True
+64,2025-03-03,BGN 56,Eindhoven,Sofia,True,False
+63,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+62,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+61,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+60,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+59,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+58,2025-03-03,BGN 58,Eindhoven,Sofia,True,False
+57,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+56,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+55,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+54,2025-03-03,BGN 54,Eindhoven,Sofia,True,False
+53,2025-03-03,BGN 76,Eindhoven,Sofia,True,False
+52,2025-03-03,BGN 66,Eindhoven,Sofia,True,False
+51,2025-03-03,BGN 66,Eindhoven,Sofia,True,False
+50,2025-03-03,BGN 66,Eindhoven,Sofia,True,False
+49,2025-03-03,BGN 66,Eindhoven,Sofia,True,False
+48,2025-03-03,BGN 73,Eindhoven,Sofia,True,False
+47,2025-03-03,BGN 77,Eindhoven,Sofia,True,False
+46,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+45,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+44,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+43,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+42,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+41,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+40,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+39,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+38,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+37,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+36,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+35,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+34,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+33,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+32,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+31,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+30,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+29,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+28,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+27,2025-03-03,BGN 56,Eindhoven,Sofia,True,False
+26,2025-03-03,BGN 56,Eindhoven,Sofia,True,False
+25,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+24,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+23,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+22,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+21,2025-03-03,BGN 55,Eindhoven,Sofia,True,False
+20,2025-03-03,BGN 93,Eindhoven,Sofia,True,False
+19,2025-03-03,BGN 69,Eindhoven,Sofia,True,False
+18,2025-03-03,BGN 69,Eindhoven,Sofia,True,False
+17,2025-03-03,BGN 89,Eindhoven,Sofia,True,False
+16,2025-03-03,BGN 89,Eindhoven,Sofia,True,False
+15,2025-03-03,BGN 96,Eindhoven,Sofia,True,False
+14,2025-03-03,BGN 109,Eindhoven,Sofia,True,False
+13,2025-03-03,BGN 109,Eindhoven,Sofia,True,False
+12,2025-03-03,BGN 113,Eindhoven,Sofia,True,False
+11,2025-03-03,BGN 115,Eindhoven,Sofia,True,False
+10,2025-03-03,BGN 120,Eindhoven,Sofia,True,False
+9,2025-03-03,BGN 116,Eindhoven,Sofia,True,False
+8,2025-03-03,BGN 135,Eindhoven,Sofia,True,False
+7,2025-03-03,BGN 135,Eindhoven,Sofia,True,False
+6,2025-03-03,BGN 116,Eindhoven,Sofia,True,False
+5,2025-03-03,BGN 135,Eindhoven,Sofia,True,False
+4,2025-03-03,BGN 194,Eindhoven,Sofia,True,False

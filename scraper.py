@@ -8,32 +8,51 @@ GitHub: github.com/Boyan-Apostolov/Flight-Prices-Predicitons
 """
 
 from playwright.sync_api import sync_playwright
-from datetime import datetime
+from datetime import datetime, timedelta
 import requests
-import json
 import csv
 
-holidays_endpoint = "https://openholidaysapi.org/PublicHolidays?countryIsoCode=BG&countryIsoCode=NL&languageIsoCode=EN&validFrom=2025-01-01&validTo=2025-12-31"
+public_holidays_endpoint = "https://openholidaysapi.org/PublicHolidays?countryIsoCode=BG&countryIsoCode=NL&languageIsoCode=EN&validFrom=2025-01-01&validTo=2025-12-31"
+
+school_holidays_endpoint = "https://openholidaysapi.org/SchoolHolidays?countryIsoCode=NL&validFrom=2025-01-01&validTo=2025-12-31"
+
 today = datetime.today()
 data = []
-holidays_data = []
+
+public_holidays_data = []
+school_holidays_data = []
 
 
-def preload_holidays():
-    global holidays_data
+def get_date_range(start_date: str, end_date: str):
+    start = datetime.strptime(start_date, "%Y-%m-%d")
+    end = datetime.strptime(end_date, "%Y-%m-%d")
+    return [(start + timedelta(days=i)).strftime("%Y-%m-%d") for i in range((end - start).days + 1)]
 
-    print("\n🚀 Fetching holidays...\n")
 
-    response = requests.get(holidays_endpoint)
-
+def parse_holidays(url, holiday_list):
+    response = requests.get(url)
     if response.status_code == 200:
         holidays = response.json()
-
-        holidays_data = {holiday["startDate"] for holiday in holidays}
-        print(holidays_data)
+        for holiday in holidays:
+            holiday_list.extend(get_date_range(
+                holiday['startDate'], holiday['endDate']))
     else:
         print(
             f"❌ Failed to fetch data from API. Status code: {response.status_code}")
+
+
+def preload_holidays():
+    global public_holidays_endpoint, school_holidays_endpoint, public_holidays_data, school_holidays_data
+
+    print("\n🚀 Fetching holidays...\n")
+
+    public_holidays_data.clear()
+    school_holidays_data.clear()
+
+    parse_holidays(public_holidays_endpoint, public_holidays_data)
+    parse_holidays(school_holidays_endpoint, school_holidays_data)
+
+    print("Public and School Holiday loaded successfully")
 
 
 def export_to_csv(data, filename="flight_prices.csv"):
@@ -113,7 +132,8 @@ def scrape_page(page):
                 "price": price,
                 "departure_airport": departure_airport,
                 "arrival_airport": arrival_airport,
-                "is_holiday": departure_date_formatted in holidays_data
+                "is_public_holiday": departure_date_formatted in public_holidays_data,
+                "is_school_holiday": departure_date_formatted in school_holidays_data,
             }
             data.append(entry)
 
@@ -157,4 +177,4 @@ def next_date(page):
 if __name__ == "__main__":
     preload_holidays()
 
-    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTE3KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC")
+    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTI3KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC")
