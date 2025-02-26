@@ -10,6 +10,7 @@ GitHub: github.com/Boyan-Apostolov/Flight-Prices-Predicitons
 from playwright.sync_api import sync_playwright
 from datetime import datetime, timedelta
 import requests
+import re
 import csv
 
 public_holidays_endpoint = "https://openholidaysapi.org/PublicHolidays?countryIsoCode=BG&countryIsoCode=NL&languageIsoCode=EN&validFrom=2025-01-01&validTo=2025-12-31"
@@ -21,6 +22,11 @@ data = []
 
 public_holidays_data = []
 school_holidays_data = []
+
+
+def extract_number(text):
+    match = re.search(r'\d+', text)
+    return int(match.group()) if match else 0
 
 
 def get_date_range(start_date: str, end_date: str):
@@ -121,8 +127,9 @@ def scrape_page(page):
             parts = aria_label.split(" ")
             history_days_ago = 0 if parts[0] == "Today" else int(
                 parts[0]) if parts[0].isdigit() else 0
-            price = parts[-1] if len(parts) > 1 else "N/A"
 
+            price = parts[-1].split(" ")[-1] if len(parts) > 1 else "N/A"
+            price = extract_number(price)
             # Calculate absolute days before departure
             days_ago = abs((departure_date - today).days) + history_days_ago
 
@@ -177,4 +184,4 @@ def next_date(page):
 if __name__ == "__main__":
     preload_holidays()
 
-    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTI3KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC")
+    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTI3KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC&curr=EUR")
