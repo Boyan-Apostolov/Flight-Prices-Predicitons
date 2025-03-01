@@ -184,4 +184,4 @@ def next_date(page):
 if __name__ == "__main__":
     preload_holidays()
 
-    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI1LTAyLTI3KABqBwgBEgNFSU5yBwgBEgNTT0ZAAUgBcAGCAQsI____________AZgBAg&tfu=EgoIABAAGAAgASgC&curr=EUR")
+    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI1LTAyLTI3agcIARIDU09GcgcIARIDRUlOQAFIAXABggELCP___________wGYAQI&curr=EUR")
