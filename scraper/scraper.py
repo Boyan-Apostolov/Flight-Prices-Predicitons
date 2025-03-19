@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 import requests
 import re
 import csv
+import random
 
 public_holidays_endpoint = "https://openholidaysapi.org/PublicHolidays?countryIsoCode=BG&countryIsoCode=NL&languageIsoCode=EN&validFrom=2025-01-01&validTo=2025-12-31"
 
@@ -22,6 +23,26 @@ data = []
 
 public_holidays_data = []
 school_holidays_data = []
+all_holidays_data = []
+
+
+def get_near_holiday_status(departure_date, holidays):
+    for holiday in holidays:
+        holiday_date = datetime.strptime(holiday, "%Y-%m-%d")
+        if departure_date == holiday_date:
+            return 0  # During the holiday
+        elif departure_date >= holiday_date - timedelta(days=7) and departure_date < holiday_date:
+            return -1  # 1 week before the holiday
+        elif departure_date > holiday_date and departure_date <= holiday_date + timedelta(days=7):
+            return 1  # 1 week after the holiday
+    return None  # Not near a holiday
+
+
+def get_random_airline():
+    return random.choices(
+        ["Wizzair", "Ryanair", "Other"],
+        weights=[0.6, 0.3, 0.1]
+    )[0]
 
 
 def extract_number(text):
@@ -48,7 +69,7 @@ def parse_holidays(url, holiday_list):
 
 
 def preload_holidays():
-    global public_holidays_endpoint, school_holidays_endpoint, public_holidays_data, school_holidays_data
+    global public_holidays_endpoint, school_holidays_endpoint, public_holidays_data, school_holidays_data, all_holidays_data
 
     print("\n🚀 Fetching holidays...\n")
 
@@ -57,6 +78,8 @@ def preload_holidays():
 
     parse_holidays(public_holidays_endpoint, public_holidays_data)
     parse_holidays(school_holidays_endpoint, school_holidays_data)
+
+    all_holidays_data = list(set(public_holidays_data + school_holidays_data))
 
     print("Public and School Holiday loaded successfully")
 
@@ -82,7 +105,7 @@ def open_webpage(url):
 
         print("\n🚀 Flights scraper started...\n")
 
-        for i in range(5):  # To adjust the future days count
+        for i in range(50):  # To adjust the future days count
             scrape_page(page)
             next_date(page)
             page.wait_for_timeout(200)
@@ -133,6 +156,15 @@ def scrape_page(page):
             # Calculate absolute days before departure
             days_ago = abs((departure_date - today).days) + history_days_ago
 
+            departure_date_obj = datetime.strptime(
+                departure_date_formatted, "%Y-%m-%d")
+
+            near_holiday = get_near_holiday_status(
+                departure_date_obj, all_holidays_data)
+
+            record_timestamp = (departure_date_obj -
+                                timedelta(days=days_ago)).strftime("%Y-%m-%d")
+
             entry = {
                 "daysAgo": days_ago,
                 "departureDate": departure_date_formatted,
@@ -141,6 +173,9 @@ def scrape_page(page):
                 "arrival_airport": arrival_airport,
                 "is_public_holiday": departure_date_formatted in public_holidays_data,
                 "is_school_holiday": departure_date_formatted in school_holidays_data,
+                "airline": get_random_airline(),
+                "near_holiday": near_holiday,
+                "record_timestamp": record_timestamp
             }
             data.append(entry)
 
@@ -184,4 +219,4 @@ def next_date(page):
 if __name__ == "__main__":
     preload_holidays()
 
-    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI1LTAyLTI3agcIARIDU09GcgcIARIDRUlOQAFIAXABggELCP___________wGYAQI&curr=EUR")
+    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI1LTAzLTIwagcIARIDU09GcgcIARIDRUlOQAFIAXABggELCP___________wGYAQI&curr=EUR")
