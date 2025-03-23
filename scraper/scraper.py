@@ -40,7 +40,7 @@ def get_near_holiday_status(departure_date, holidays):
 
 def get_random_airline():
     return random.choices(
-        ["Wizzair", "Ryanair", "Other"],
+        ["Delta", "Republic American", "Other"],
         weights=[0.6, 0.3, 0.1]
     )[0]
 
@@ -84,7 +84,7 @@ def preload_holidays():
     print("Public and School Holiday loaded successfully")
 
 
-def export_to_csv(data, filename="flight_prices.csv"):
+def export_to_csv(data, filename="flight_prices_JFK_DCA.csv"):
     if not data:
         print("❌ No data to export.")
         return
@@ -105,7 +105,7 @@ def open_webpage(url):
 
         print("\n🚀 Flights scraper started...\n")
 
-        for i in range(50):  # To adjust the future days count
+        for i in range(200):  # To adjust the future days count
             scrape_page(page)
             next_date(page)
             page.wait_for_timeout(200)
@@ -136,9 +136,9 @@ def scrape_page(page):
 
         # Check if "View price history" button is available
         page.wait_for_selector(":has-text('View price history')", timeout=1000)
-        page.click(":has-text('View price history')")
 
-        # Get all history points
+        page.click(".vx1PSc")  # Expanding the history so it can load the data
+
         history_point_marker = ".ke9kZe-LkdAo-RbRzK-JNdkSc"
         page.wait_for_selector(history_point_marker, timeout=1000)
         elements = page.locator(history_point_marker).all()
@@ -219,4 +219,4 @@ def next_date(page):
 if __name__ == "__main__":
     preload_holidays()
 
-    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI1LTAzLTIwagcIARIDU09GcgcIARIDRUlOQAFIAXABggELCP___________wGYAQI&curr=EUR")
+    open_webpage("https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI1LTAzLTI0agcIARIDSkZLcgwIAxIIL20vMHJoNmtAAUgBcAGCAQsI____________AZgBAg&curr=EUR")
