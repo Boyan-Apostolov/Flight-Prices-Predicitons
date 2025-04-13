@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flight Prediction</title>
+  </head>
+  <body>
+    <h1>Cheapest Booking Time Predictor</h1>
+    <form method="POST">
+      Price: <input type="number" name="price" step="0.01" required /><br />
+      Departure Airport:
+      <input type="text" name="departure_airport" required /><br />
+      Arrival Airport:
+      <input type="text" name="arrival_airport" required /><br />
+      Departure Date: <input type="date" name="departure_date" required /><br />
+      Record Date (Today):
+      <input type="date" name="record_date" required /><br />
+      Near Holiday:
+      <select name="near_holiday">
+        <option value="-1">Before Holiday</option>
+        <option value="0">Holiday</option>
+        <option value="1">After Holiday</option></select
+      ><br />
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+    <h2>
+      Predicted cheapest day: {{ prediction | round(0, 'floor') }} days before
+      the flight
+    </h2>
+    {% endif %}
+  </body>
+</html>
