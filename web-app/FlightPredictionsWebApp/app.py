@@ -14,6 +14,7 @@ le_arr = joblib.load('models/arrival_encoder.pkl')
 @app.route('/', methods=['GET', 'POST'])
 def index():
     prediction = None
+    today = datetime.today().strftime('%Y-%m-%d')
     if request.method == 'POST':
         price = float(request.form['price'])
         dep_airport = request.form['departure_airport']
@@ -45,7 +46,7 @@ def index():
         df = pd.DataFrame([features])
         prediction = model.predict(df)[0]
 
-    return render_template('index.html', prediction=prediction)
+    return render_template('index.html', today=today, prediction=prediction)
 
 
 # ✅ Optional: run on port 5000
