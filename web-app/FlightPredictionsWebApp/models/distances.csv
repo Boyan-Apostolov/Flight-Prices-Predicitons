@@ -1,0 +1,24 @@
+departure,arrival,distance
+Eindhoven,Athens,2100
+Eindhoven,Amsterdam,120
+Eindhoven,Sofia,1700
+Eindhoven,İstanbul,2200
+Eindhoven,"Washington, D.C.",6200
+Eindhoven,New York,5900
+Sofia,Athens,530
+Sofia,Amsterdam,1750
+Sofia,İstanbul,550
+Sofia,"Washington, D.C.",7700
+Sofia,New York,7600
+İstanbul,Athens,560
+İstanbul,Amsterdam,2200
+İstanbul,New York,8100
+İstanbul,"Washington, D.C.",8200
+New York,Athens,7900
+New York,Amsterdam,5800
+New York,"Washington, D.C.",330
+Amsterdam,Athens,2150
+Amsterdam,"Washington, D.C.",6200
+Athens,"Washington, D.C.",8300
+Amsterdam,New York,5800
+Athens,New York,7900
