@@ -4,10 +4,15 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: url("https://plus.unsplash.com/premium_photo-1679758630055-99ebb2df7d77?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center center/cover;
+  height: 100vh;
+}
+
+.content {
   display: flex;
+  margin-top: 5%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .glass-container {
@@ -58,4 +63,34 @@ label {
 .error-box {
   background-color: rgba(251, 106, 108, 0.4);
   border: 1px solid #ee9090;
+}
+
+.custom-footer {
+  bottom: 0;
+  max-width: 550px;
+  background: rgba(0, 0, 0, 0.7); /* dark semi-transparent */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  z-index: 999;
+}
+
+.custom-footer a {
+  color: #66ccff;
+  text-decoration: underline;
+}
+
+.custom-footer a:hover {
+  color: #ffffff;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 0.95rem;
 }
